@@ -1,0 +1,176 @@
+:root {
+  --bg-0: #1c2336;
+  --text-0: #ced6eb;
+  --text-1: #a1adcc;
+  --accent-0: #6480ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'JetBrains Mono', monospace;
+  background-color: var(--bg-0);
+  color: var(--text-0);
+}
+
+button, textarea, input {
+  font-family: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 0.1rem dashed var(--text-0);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gap {
+  gap: 1rem;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1, h2, h3, p, li, .up {
+  opacity: 0;
+  transform: translateY(1rem);
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+[data-delay="250"] {
+  animation-delay: 250ms;
+}
+
+[data-delay="500"] {
+  animation-delay: 500ms;
+}
+
+[data-delay="750"] {
+  animation-delay: 750ms;
+}
+
+[data-delay="1000"] {
+  animation-delay: 1000ms;
+}
+
+h1, h2, h3 {
+  margin-block: 1rem;
+  text-transform: uppercase;
+  color: var(--text-0);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--text-1);
+  margin-block: 1rem;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-0);
+  text-decoration: none;
+  transition: color 250ms ease;
+}
+
+a:hover {
+  color: var(--accent-0);
+}
+
+p a {
+  display: inline-flex;
+}
+
+main {
+  padding: 2rem;
+  margin: auto;
+  max-width: 800px;
+}
+
+.accent {
+  color: var(--accent-0);
+}
+
+.bg-accent {
+  background-color: var(--accent-0);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.shortcut::first-letter {
+  text-decoration: underline;
+}
+
+.shortcut {
+  text-transform: uppercase;
+}
+
+a .material-symbols-outlined {
+	transition: transform 250ms ease;
+}
+
+a:hover .material-symbols-outlined {
+	transform: translateX(0.5rem);
+}
+
+.img {
+  width: 100%;
+  font-size: 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.img img {
+  width: 100%;
+  height: auto;
+}
+
+em {
+  color: var(--accent-0);
+}
