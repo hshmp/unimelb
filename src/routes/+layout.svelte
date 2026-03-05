@@ -11,7 +11,7 @@
 		shortcuts.forEach((s) => {
 			if (e.key.toLowerCase() === s.textContent?.[0].toLowerCase()) {
 				const a = s.parentElement as HTMLAnchorElement
-				if (a.href.includes(window.location.origin) && !a.href.includes('.')) {
+				if (a.href.includes(window.location.origin) && !a.href.split('/').pop()?.includes('.')) {
 					a.click()
 				} else {
 					window.open(a.href, '_blank')
