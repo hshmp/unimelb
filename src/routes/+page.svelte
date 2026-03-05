@@ -8,8 +8,8 @@ const links = ['maps', 'notes']
 	</a>
 	<h1>Find what you need.</h1>
 	<p data-delay="250">
-		Navigating the university website can be hard and keeping up with classes can be difficult.
-		That's why this exists. Information is now at the tip of your fingers. <em>Links with an underlined letter are bound to a hotkey!</em>
+		Navigating the university website can be confusing and keeping up with classes can be hard.
+		That's why this exists. Information is now at the tip of your fingers. <em>Press letters to click links or use "/" for home!</em>
 	</p>
 	<div class="flex column gap">
 		{#each links as link, i}

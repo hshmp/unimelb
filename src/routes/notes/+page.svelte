@@ -6,8 +6,8 @@
 		Resources from both anonymous and named donors are posted here. They may be outdated or goated.
 	</p>
 	<p data-delay="500">
-		You can open markdown files (<code>.md</code>) using <a href="https://obsidian.org">Obsidian</a>
-		or a code editor like <a href="https://vscode.dev">Visual Studio Code</a>.
+		You can open markdown files (<code>.md</code>) using <a href="https://obsidian.md" target="_blank">Obsidian</a>
+		or a code editor like <a href="https://vscode.dev" target="_blank">Visual Studio Code</a>.
 	</p>
 	<h2>Calculus</h2>
 	<h3>Limits</h3>
