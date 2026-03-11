@@ -1,4 +1,5 @@
 <script>
+import Kbd from '../components/Kbd.svelte'
 const links = ['maps', 'notes']
 </script>
 
@@ -9,7 +10,7 @@ const links = ['maps', 'notes']
 	<h1>Find what you need.</h1>
 	<p data-delay="250">
 		Navigating the university website can be confusing and keeping up with classes can be hard.
-		That's why this exists. Information is now at the tip of your fingers. <em>Press letters to click links or use "/" for home!</em>
+		That's why this exists. Information is now at the tip of your fingers. <em>Press letters to click links or use <Kbd>/</Kbd> for home!</em>
 	</p>
 	<div class="flex column gap">
 		{#each links as link, i}
