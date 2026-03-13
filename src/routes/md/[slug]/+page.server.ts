@@ -1,4 +1,4 @@
-import { readFileSync } from 'fs'
+import { readFileSync } from 'node:fs'
 import { marked } from 'marked'
 import markedKatex from 'marked-katex-extension'
 import { error } from '@sveltejs/kit'
