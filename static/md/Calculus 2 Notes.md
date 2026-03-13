@@ -157,3 +157,15 @@ $$
 \lim_{ x \to \infty } -\frac{1}{3} \left( x^{-\frac{4}{3}} \right) (x^{-1})
 \end{gathered}
 $$
+
+The *sandwich* theorem can be used to evaluate $\frac{\sin x}{x}$.
+
+$$
+\begin{gathered}
+\lim_{ x \to \infty } \frac{x +\sin x}{x} \\
+\lim_{ x \to \infty } \frac{x}{x} + \frac{\sin x}{x} \\
+1 + \lim_{ x \to \infty } x^{-1} \sin x \\
+1 + 0 [-1, 1] \\
+1 + 0
+\end{gathered}
+$$

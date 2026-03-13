@@ -1,3 +1,18 @@
+# Limit
+
+## U Sub L'Hopital
+
+$$
+\begin{gathered}
+\lim_{ x \to \infty } x \sin \frac{1}{x} \\
+u = \frac{1}{x} \\
+\lim_{ x \to \infty } x \frac{u}{u} \sin u  \\
+\lim_{ x \to \infty } x u \cdot \lim_{ x \to \infty } \frac{\sin u}{u} \\
+\lim_{ x \to \infty } x \frac{1}{x} \cdot 1 \\
+1
+\end{gathered}
+$$
+
 # Derivative
 
 ## Product
