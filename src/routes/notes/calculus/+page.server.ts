@@ -1,10 +1,6 @@
-import { readdirSync } from 'node:fs'
-import { join } from 'node:path'
+const modules = import.meta.glob('/static/md/*.md', { query: '?raw', import: 'default' })
 
 export function load() {
-	const mdDir = join(process.cwd(), 'static/md')
-	const files = readdirSync(mdDir)
-	const md = files.filter((file) => file.endsWith('.md')).map((file) => file.replace(/\.md$/, ''))
-
-	return { md }
+  const md = Object.keys(modules).map((path) => path.replace('/static/md/', '').replace(/\.md$/, ''))
+  return { md }
 }
